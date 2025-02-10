@@ -19,7 +19,7 @@ CONECTION_PGDB=
 TBOTTOKEN=
 
 EXAMPLETOKEN=1234567890
-
+IPSTACK_API_KEY=
 ```
 
 ## Tokens
@@ -27,6 +27,7 @@ Links to information about tokens
 
 [GITHUBTOKEN](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
+[IPSTACK_API_KEY](https://ipstack.com/)
 
 ## Adding telegram bot functions.
 Dear students, when implementing your functions, adhere to the following recommendations.
@@ -37,6 +38,12 @@ The code must be organized in a class that inherits from the abstract class **At
  - about: str - short description
  - description: str - a detailed description of the function with a description of the parameters if they are needed
  - state: bool - state whether the function is enabled or disabled
+
+ ## Please run tests and check code with pylint before submitting.
+
+```
+pylint $(git ls-files '*.py')
+```
 
 For an example, take a look at the file **[example_bot_function.py](https://github.com/IHVH/system-integration-bot-2/blob/master/src/functions/atomic/example_bot_function.py)**
 

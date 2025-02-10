@@ -9,7 +9,8 @@ from telebot.callback_data import CallbackData
 from bot_func_abc import AtomicBotFunctionABC
 
 class AtomicExampleBotFunction(AtomicBotFunctionABC):
-    """Example of implementation of atomic function"""
+    """Example of implementation of atomic function
+    """
 
     commands: List[str] = ["example", "ebf"]
     authors: List[str] = ["IHVH"]
@@ -23,6 +24,7 @@ class AtomicExampleBotFunction(AtomicBotFunctionABC):
     example_keyboard_factory: CallbackData
 
     def set_handlers(self, bot: telebot.TeleBot):
+        """Set message handlers"""
 
         self.bot = bot
         self.example_keyboard_factory = CallbackData('t_key_button', prefix=self.commands[0])
