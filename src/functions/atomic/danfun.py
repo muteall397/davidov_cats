@@ -1,5 +1,4 @@
-"""
-Module implementation of the atomic function of the telegram bot. Example of implementation.
+"""Module implementation of the atomic function of the telegram bot. Example of implementation.
 """
 
 import os
